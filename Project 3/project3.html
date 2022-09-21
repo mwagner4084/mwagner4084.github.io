@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+	
+	<!--Marissa Connell 03/10/2022 Project 3-->
+	
+	<meta charset="UTF-8">
+	<title>Student Orientation Event Registration</title>
+	<style> 
+	 	button {
+			border: none;
+			background-color: white;
+		}
+		
+		.redText {
+			color: red;
+		}
+	</style>
+</head>
+
+<body>
+<form method="post" action="http://classes.kvcc.edu/students/~madams/reflector.php">	
+<table>
+  <tbody>
+    <tr>
+      <td>Student ID:</td>
+      <td><input type="text" name="userName" id="userName"></td>
+    </tr>
+    <tr>
+      <td>Password:</td>
+      <td><input type="password" name="pWord" id="pWord"></td>
+    </tr>
+    <tr>
+      <td>Student Type:</td>
+      <td><p>
+        <label>
+          <input type="radio" name="studentType" value="F" accesskey="F" id="studentType_0">
+          <span class="redText">F</span>irst-time Student</label>
+        <br>
+        <label>
+          <input type="radio" name="studentType" value="T" accesskey="T" id="studentType_1">
+			<span class="redText">T</span>ransfer</label>
+        <br>
+      </p></td>
+    </tr>
+    <tr>
+	  <td>Interests:</td>
+      <td><p>
+        <label>
+          <input type="checkbox" name="interests" value="CS" accesskey="C" id="interests_0">
+			<span class="redText">C</span>lub/Sports</label>
+        <br>
+        <label>
+          <input type="checkbox" name="interests" value="E" accesskey="E" id="interests_1">
+			<span class="redText">E</span>nvironmental</label>
+        <br>
+        <label>
+          <input type="checkbox" name="interests" value="V" accesskey="V" id="interests_2">
+			<span class="redText">V</span>olunteerism</label>
+        <br>
+        <label>
+          <input type="checkbox" name="interests" value="IS" accesskey="I" id="interests_3">
+			<span class="redText">I</span>nternational Study</label>
+        <br>
+        <label>
+          <input type="checkbox" name="interests" value="R" accesskey="R" id="interests_4">
+			<span class="redText">R</span>OTC</label>
+        <br>
+        <label>
+          <input type="checkbox" name="interests" value="FS" accesskey="S" id="interests_5">
+			Fraternity/<span class="redText">S</span>orority</label>
+        <br>
+        <label>
+          <input type="checkbox" name="interests" value="MB" accesskey="M" id="interests_6">
+			<span class="redText">M</span>arching Band</label>
+        <br>
+        <label>
+          <input type="checkbox" name="interests" value="SG" accesskey="G" id="interests_7">
+			Student <span class="redText">G</span>overnment</label>
+        <br>
+        <label>
+          <input type="checkbox" name="interests" value="L" accesskey="L" id="interests_8">
+			<span class="redText">L</span>GBTQIA+</label>
+        <br>
+      </p>
+	</td>
+    </tr>
+    <tr>
+      <td>Intended Major:</td>
+      <td>
+		  <select>
+		  <option value="NO">&nbsp;</option>
+		  <option value="ACCT">Accounting</option>
+		  <option value="ART">Art</option>
+		  <option value="BUS">Business</option>
+		  <option value="COM">Communications</option>
+		  <option value="CIS">Computer Science</option>
+		  <option value="EDU">Education</option>
+		  <option value="FL">Foreign Language</option>
+		  <option value="GD">Graphic Design</option>
+		  <option value="HE">Health Occupations</option>
+		  <option value="HIS">History</option>
+		  <option value="MAR">Marketing</option>
+		  <option value="MAT">Mathematics</option>
+		  <option value="MUS">Music</option>
+		  <option value="NUR">Nursing</option>
+		  <option value="O">Other</option>
+		  <option value="PSY">Psychology</option>
+		  <option value="SOC">Social Work</option>
+		  <option value="UN">Undecided</option>
+		  </select>
+		</td>
+    </tr>
+    <tr>
+      <td>Accomodations:</td>
+      <td><textarea cols="20" maxlength="140"></textarea></td>
+    </tr>
+    <tr>
+      <td>
+		  <button type="submit">
+			  <img src="submitButton.png" alt="Submit Button">
+		  </button>
+	</td>
+      <td>
+		  <button type="reset">
+		  	<img src="resetButton.png" alt="Reset Button">
+		  </button>
+	</td>
+    </tr>
+  </tbody>
+</table>
+</form>	
+</body>
+</html>
